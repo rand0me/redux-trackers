@@ -16,5 +16,8 @@
  * https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/node/v8/index.d.ts
  */
 declare module 'sha.js' {
+  export default function shaJs(algorithm: string): string;
 
+  type Utf8AsciiLatin1Encoding = 'utf8' | 'ascii' | 'latin1';
+  type HexBase64Latin1Encoding = 'latin1' | 'hex' | 'base64';
 }
